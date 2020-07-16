@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/_Project/Scenes/Mock Scene.unity
-    guid: 71d578f2c3346704b914008fe78623d2
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
-    guid: 361888a6f632262419ffd21ddcb6bae6
+    path: Assets/Scenes/Slider.unity
+    guid: b0c3f249cbabe2c45bacdfaed592f4a6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: fafab4802f3f2b94ab27c0cb77426429,
       type: 2}

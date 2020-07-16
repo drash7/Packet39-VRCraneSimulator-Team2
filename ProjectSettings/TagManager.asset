@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - grabCube
+  - lever
+  - leftTrigger
+  - rightTrigger
+  - upTrigger
+  - downTrigger
+  - Grabbable
+  - Grabbed
+  - Rotating
   layers:
   - Default
   - TransparentFX
@@ -13,9 +22,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Magnet
+  - AttachedToMagnet
+  - CraneLever
   - 
   - 
   - 
