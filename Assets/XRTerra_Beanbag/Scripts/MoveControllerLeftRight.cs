@@ -28,11 +28,11 @@ public class MoveControllerLeftRight : MonoBehaviour
     {
         if (other.tag == "leftTrigger")
         {
-            speed = -1f;
+            speed = -2f;
         }
         if (other.tag == "rightTrigger")
         {
-            speed = 1f;
+            speed = 2f;
         }
     
     }

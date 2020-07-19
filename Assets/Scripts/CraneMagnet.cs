@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraneMagnet : MonoBehaviour
+public class CraneMagnet : Singleton<CraneMagnet>
 {
     private bool grabbed;
     public GameObject grabbedObj;
@@ -21,7 +21,7 @@ public class CraneMagnet : MonoBehaviour
         }
     }
 
-    void DropObject()
+    public void DropObject()
     {
         grabbedObj.gameObject.tag = "Grabbable";
         grabbedObj.gameObject.layer = LayerMask.NameToLayer("Default");

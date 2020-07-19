@@ -13,6 +13,7 @@ TagManager:
   - Grabbable
   - Grabbed
   - Rotating
+  - Load
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Magnet
   - AttachedToMagnet
   - CraneLever
-  - 
+  - Platform
   - 
   - 
   - 
