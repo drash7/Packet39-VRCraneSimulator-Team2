@@ -12,6 +12,8 @@ public class MoveControllerUpDown : MonoBehaviour
     private string direction;
     public float speed;
     public float rotationSpeed;
+    //for sound
+    public bool UpDownMovement;
     //LeverHingeMotor.force += 40 * rotateJointLever;
     //LeverHingeMotor.targetVelocity = 20 * Input.GetAxis("Vertical");
     //float rotateJointLever = Input.GetAxis("Vertical") * rotationSpeed; * rotationSpeed * 5;
@@ -21,6 +23,7 @@ public class MoveControllerUpDown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        UpDownMovement = false;
         rotationSpeed = 1f;
         speed = 0f;
         LeverHingeJoint = LeverJoint.GetComponent(typeof(HingeJoint)) as HingeJoint;
@@ -39,13 +42,14 @@ public class MoveControllerUpDown : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        UpDownMovement = true;
         if (other.tag == "upTrigger")
         {
-            speed = 1f;
+            speed = 1f * Time.timeScale;
         }
         if (other.tag == "downTrigger")
         {
-            speed = -1f;
+            speed = -1f * Time.timeScale;
         }
 
     }

@@ -28,6 +28,7 @@ public class CraneMagnet : MonoBehaviour
         Destroy(gameObject.GetComponent(typeof(FixedJoint)));
         grabbed = false;
         UnityEngine.Debug.Log("dropped");
+
     }
 
     public void OnTriggerEnter(Collider other)

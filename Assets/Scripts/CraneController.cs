@@ -22,11 +22,17 @@ public class CraneController : MonoBehaviour
     private JointMotor LeverHingeMotor;
     //private JointLimits hingeJ;
 
+    public AudioSource CraneMovingSound;
+    public GameObject UpDownTrigger;
+    public MoveControllerUpDown mcUpDown;
+
     void Start()
     {
         //LeverHingeJoint = LeverJoint.GetComponent(typeof(HingeJoint)) as HingeJoint;
         //LeverHingeMotor = LeverHingeJoint.motor;
         MagnetJoint = MagnetHandle.GetComponent(typeof(SpringJoint)) as SpringJoint;
+        CraneMovingSound = GetComponent(typeof(AudioSource)) as AudioSource;
+        mcUpDown = UpDownTrigger.GetComponent(typeof(MoveControllerUpDown)) as MoveControllerUpDown;
         angle = 0;
         //JointLimits hingeJ = new JointLimits();
     }
@@ -66,9 +72,17 @@ public class CraneController : MonoBehaviour
 
     void Update()
     {
-        float rotateJointCabin = Input.GetAxis("Horizontal") * rotationSpeed;
+        float rotateJointCabin = Input.GetAxis("Horizontal") * rotationSpeed * Time.timeScale;
         //float rotateJointLever = Input.GetAxis("Vertical") * rotationSpeed; //* rotationSpeed * 5;
 
+        if ((rotateJointCabin != 0f) || (mcUpDown.UpDownMovement))
+        {
+            CraneMovingSound.Play();
+            //UnityEngine.Debug.Log(mcUpDown.UpDownMovement);
+        } else
+        {
+            CraneMovingSound.Pause();
+        }
         //angle = rotateJointLever;
 
         if (Input.GetKey("q") && maxDistanceMagnet < 5)
