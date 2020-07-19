@@ -57,7 +57,6 @@ public class CraneController : MonoBehaviour
     public void MoveDown()
     {
         maxDistanceMagnet += 0.025f;
-        UnityEngine.Debug.Log("down");
     }
 
     public void MoveUp()

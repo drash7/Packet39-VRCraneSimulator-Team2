@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraneMagnet : Singleton<CraneMagnet>
+public class CraneMagnet : MonoBehaviour
 {
     private bool grabbed;
     public GameObject grabbedObj;
@@ -27,6 +27,7 @@ public class CraneMagnet : Singleton<CraneMagnet>
         grabbedObj.gameObject.layer = LayerMask.NameToLayer("Default");
         Destroy(gameObject.GetComponent(typeof(FixedJoint)));
         grabbed = false;
+        UnityEngine.Debug.Log("dropped");
     }
 
     public void OnTriggerEnter(Collider other)
@@ -34,7 +35,7 @@ public class CraneMagnet : Singleton<CraneMagnet>
         //Debug.Log("contact");
         if (other.gameObject.tag == "Grabbable")
         {
-            Debug.Log("contact");
+            
             other.gameObject.layer = LayerMask.NameToLayer("AttachedToMagnet");
             Debug.Log(other.gameObject.layer);
             other.gameObject.transform.localEulerAngles = gameObject.transform.localEulerAngles;

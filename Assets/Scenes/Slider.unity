@@ -1355,7 +1355,7 @@ GameObject:
   - component: {fileID: 736379489}
   - component: {fileID: 736379488}
   m_Layer: 0
-  m_Name: UpDownPlatform
+  m_Name: BoomUpDownPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3523,7 +3523,7 @@ GameObject:
   - component: {fileID: 1521301941}
   - component: {fileID: 1521301940}
   m_Layer: 0
-  m_Name: UpDownLever
+  m_Name: BoomUpDownLever
   m_TagString: lever
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3753,7 +3753,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1686122047}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64656a243a16d574794f24128ad3d9a9, type: 3}
   m_Name: 
@@ -3918,6 +3918,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8667531141529709160, guid: d418530584e79af4d80ade3c8b332172,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8667531141537083402, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3931,12 +3936,12 @@ PrefabInstance:
     - target: {fileID: 8667531141687073859, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.58222777
+      value: 0.5822277
       objectReference: {fileID: 0}
     - target: {fileID: 8667531141687073859, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.16665499
+      value: 0.16665497
       objectReference: {fileID: 0}
     - target: {fileID: 8667531141807782468, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
@@ -3946,17 +3951,27 @@ PrefabInstance:
     - target: {fileID: 8667531141807782490, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.000001
       objectReference: {fileID: 0}
     - target: {fileID: 8667531141807782490, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 4.9999995
       objectReference: {fileID: 0}
     - target: {fileID: 8667531141807782490, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.950768
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667531141807782490, guid: d418530584e79af4d80ade3c8b332172,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.057
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667531141807782490, guid: d418530584e79af4d80ade3c8b332172,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.503
       objectReference: {fileID: 0}
     - target: {fileID: 8667531141950093834, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
@@ -3981,7 +3996,7 @@ PrefabInstance:
     - target: {fileID: 8667531141950093873, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Load
       objectReference: {fileID: 0}
     - target: {fileID: 8667531141950093876, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
@@ -4023,6 +4038,11 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 2.3669207
       objectReference: {fileID: 0}
+    - target: {fileID: 8667531142780923031, guid: d418530584e79af4d80ade3c8b332172,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8667531142918609121, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4031,12 +4051,12 @@ PrefabInstance:
     - target: {fileID: 8667531142918609127, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0016527952
+      value: 0.0016528075
       objectReference: {fileID: 0}
     - target: {fileID: 8667531142918609127, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.00087433646
+      value: -0.00087433617
       objectReference: {fileID: 0}
     - target: {fileID: 8667531142918609133, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
@@ -4236,7 +4256,7 @@ GameObject:
   - component: {fileID: 1813183820}
   - component: {fileID: 1813183819}
   m_Layer: 0
-  m_Name: DownTrigger
+  m_Name: BoomDownTrigger
   m_TagString: downTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4361,7 +4381,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878665309}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -4711,7 +4731,7 @@ GameObject:
   - component: {fileID: 1980939379}
   - component: {fileID: 1980939378}
   m_Layer: 0
-  m_Name: UpTrigger
+  m_Name: BoomUpTrigger
   m_TagString: upTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

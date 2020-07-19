@@ -33,6 +33,7 @@ public class MoveControllerBoomUpDown : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        UnityEngine.Debug.Log("called");
         if (other.tag == "upTrigger")
         {
             up = true;
