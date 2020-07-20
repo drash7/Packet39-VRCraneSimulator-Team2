@@ -4889,7 +4889,7 @@ PrefabInstance:
     - target: {fileID: 8667531143231544919, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8667531143231545002, guid: d418530584e79af4d80ade3c8b332172,
         type: 3}
@@ -5151,20 +5151,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1686122047}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1742243157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742243152}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60600e4d26095d141a961900914c3bf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  load: {fileID: 962384814}
-  scoreText: {fileID: 699818521}
 --- !u!54 &1742243158
 Rigidbody:
   m_ObjectHideFlags: 0
