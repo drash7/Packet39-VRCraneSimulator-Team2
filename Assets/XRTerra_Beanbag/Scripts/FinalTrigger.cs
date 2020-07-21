@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,8 @@ public class FinalTrigger : MonoBehaviour
     public Text scoreText;
     private int currentScore;
     private Transform initLoadPos;
+    // add endCanvas, set to inactive
+    // public Canvas endCanvas;
 
     private void Start()
     {
@@ -17,6 +20,15 @@ public class FinalTrigger : MonoBehaviour
         currentScore = 0;
         scoreText.text = "Score: " + currentScore.ToString();
         initLoadPos = load.transform;
+    }
+
+    private void Update()
+    {
+        if (currentScore == 5)
+        {
+            // endCanvas.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     public void OnTriggerEnter(Collider other)
