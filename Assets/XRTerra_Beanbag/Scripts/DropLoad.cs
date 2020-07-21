@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class DropLoad : MonoBehaviour
 {
-
-    private CraneMagnet craneMagnetObject;
     // Start is called before the first frame update
     void Start()
     {
-        craneMagnetObject = new CraneMagnet();
+        
     }
 
-    public void OnTriggerEnter(Collider other)
+    // Update is called once per frame
+    void Update()
     {
-        if (other.tag.Equals("DropTrigger"))
-        {
-            craneMagnetObject.DropObject();
-        }
+        
     }
 }

@@ -14,7 +14,7 @@ TagManager:
   - Grabbed
   - Rotating
   - Load
-  - DropTrigger
+  - CraneCenter
   layers:
   - Default
   - TransparentFX
