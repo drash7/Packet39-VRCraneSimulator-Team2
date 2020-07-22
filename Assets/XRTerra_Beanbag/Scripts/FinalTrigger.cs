@@ -11,6 +11,7 @@ public class FinalTrigger : MonoBehaviour
     public Text scoreText;
     private int currentScore;
     private Transform initLoadPos;
+    private Vector3 changePos;
     // add endCanvas, set to inactive
     // public Canvas endCanvas;
 
@@ -20,6 +21,7 @@ public class FinalTrigger : MonoBehaviour
         currentScore = 0;
         scoreText.text = "Score: " + currentScore.ToString();
         initLoadPos = load.transform;
+        changePos = load.transform.position;
     }
 
     private void Update()
@@ -36,9 +38,11 @@ public class FinalTrigger : MonoBehaviour
         if (other.tag.Equals("Load"))
         {
             currentScore += 1;
+            UnityEngine.Debug.Log("Current position upon collision: " + load.transform.position);
             StartCoroutine(WaitABit());
             scoreText.text = "Score: " + currentScore.ToString();
-            load.transform.position = initLoadPos.position;
+            load.transform.position = changePos;
+            UnityEngine.Debug.Log("Current position after collision: " + load.transform.position);
             load.transform.rotation = initLoadPos.rotation;
         }
     }
