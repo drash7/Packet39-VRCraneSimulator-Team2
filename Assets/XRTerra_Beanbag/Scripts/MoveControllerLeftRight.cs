@@ -13,7 +13,7 @@ public class MoveControllerLeftRight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rotationSpeed = .25f;
+        rotationSpeed = .15f;
         speed = 0f;
     }
 
