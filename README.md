@@ -22,7 +22,7 @@ An executable .apk file can be found in the Builds folder.
 
 ## Development Setup
 
-  * Ensure your PC is supported; the NVIDIA Titan X and all NVIDIA GTX 1070, 1080 and 16-series cards are supported. Likewise, all the new NIVIDIA RTX 20-series cards are also supported; unfortunately, no AMD GPUs are supported as of now.
+  * Ensure your PC is supported; the NVIDIA Titan X and all NVIDIA GTX 1070, 1080 and 16-series cards are supported. Likewise, all the new NVIDIA RTX 20-series cards are also supported; unfortunately, no AMD GPUs are supported as of now.
   * The PC must be running Windows 10, have at least 8GB of RAM, a spare USB 3.0 port and a CPU that is equivalent or greater than an Intel i5-4590/AMD Ryzen 5 1500X.
   * Update Quest firmware (to version 11.0 or higher) and Oculus App on PC (to version 1.43 or higher)
   * Once all prerequisites are satisfied:
