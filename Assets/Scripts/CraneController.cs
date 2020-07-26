@@ -67,7 +67,10 @@ public class CraneController : MonoBehaviour
 
     public void MoveUp()
     {
-        maxDistanceMagnet -= 0.0125f;
+        if (maxDistanceMagnet > 0.3)
+        {
+            maxDistanceMagnet -= 0.0125f;
+        }
     }
 
     void Update()

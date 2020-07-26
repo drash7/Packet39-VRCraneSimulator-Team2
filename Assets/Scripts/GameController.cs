@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
 
     public bool paused;
     public GameObject StartCanvas;
+    public GameObject Restart;
     void Start()
     {
         paused = true;
@@ -29,6 +30,7 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 0;
         StartCanvas.SetActive(true);
+        Restart.SetActive(true);
         paused = true;
     }
 
@@ -36,6 +38,7 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 1;
         StartCanvas.SetActive(false);
+        Restart.SetActive(false);
         paused = false;
     }
 
