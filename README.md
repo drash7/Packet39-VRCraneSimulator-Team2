@@ -11,7 +11,7 @@ The application can be used on the Oculus Quest w/ Link.
 
 ## Installation
 
-The .apk file can be found in the Builds folder.
+An executable file can be found in the Builds folder.
 
 ## Built With
 
