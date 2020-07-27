@@ -32,6 +32,8 @@ An executable file can be found in the Builds folder.
     4. If prompted with ‘Allow access to data’, select Deny.
     5. Next, there will be a prompt to Enable Oculus Link (beta), select Enable to begin remote rendering via Oculus Link.
     6. Open the project in Unity.
+    
+   * The fully functional simulation is stored in the Slider scene, found in Assets > Scenes.
  
 ## Contact
  
